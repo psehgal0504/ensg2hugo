@@ -17,7 +17,7 @@ if argc != 2 and argc != 3:
     sys.exit(1)
 
 filename = ''
-field_no = 2
+field_no = 1
 if argc == 2:
      filename = sys.argv[1]
 else:
