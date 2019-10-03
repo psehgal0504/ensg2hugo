@@ -14,7 +14,7 @@ gunzip Homo_sapiens.GRCh37.75.gtf.gz
 - The program uses a regular expression.
 - The program is installable using git clone, following README, and have license file as well.
 - ENSEMBL gene names match up to the “.” in “ENSG00000248546.3”, since the latter is relevant to build. Thus “ENSG00000248546.3”, “ENSG00000248546.31”, and “ENSG00000248546” should yield “ANP32C”. 
-- Allows an option “-f[1-9]” where -f2 would pick the 2nd column. In case another file has a different column, it asks for user input for the gene name column. If there is no “-f” then the second column is used.
+- Allows an option “-f[1-9]” where -f2 would pick the 2nd column. In case another file has a different column, it asks for user input for the gene name column. If there is no “-f” then the first column is used.
 ```
 ensg2hugo.py -f2 expres.anal.csv > expres.anal.hugo.csv
 ```
